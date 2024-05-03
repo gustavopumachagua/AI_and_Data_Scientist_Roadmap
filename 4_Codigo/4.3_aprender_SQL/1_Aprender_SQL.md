@@ -1345,7 +1345,7 @@ WHERE
 | --------------- | -------------- | ------------- |
 | 118             | Guy            | Himuro        |
 
-En este ejemplo, la consulta busca la cadena `Himuroen` la columna `last_name` de la tabla `employees`.
+En este ejemplo, la consulta busca la cadena `Himuro` en la columna `last_name` de la tabla `employees`.
 
 Tenga en cuenta que el operador igual no se puede utilizar para comparar valores nulos. Por ejemplo, la intención de la siguiente consulta es encontrar todos los empleados que no tienen números de teléfono:
 
