@@ -690,7 +690,7 @@ ORDER BY
 
 - Utilice la cláusula `ORDER BY` para ordenar las filas devueltas por la cláusula `SELECT`.
 
-- Utilice la Copción `ASC` para ordenar filas en orden ascendente y la opción `DESC` para ordenar filas en orden descendente.
+- Utilice la opción `ASC` para ordenar filas en orden ascendente y la opción `DESC` para ordenar filas en orden descendente.
 
 [🔼](#índice)
 
