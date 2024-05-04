@@ -389,7 +389,7 @@ Bienvenidos a los apuntes completo de **AI and Data Scientist Roadmap**.
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [1. ¿Qué es SQL?](./4_Codigo/4.3_aprender_SQL/1_Aprender_SQL.md)                                                                                       |
 | [2. Operadores lógicos SQL](./4_Codigo/4.3_aprender_SQL/2_Consultas_SQL.md)                                                                            |
-| [3. SQL LEFT JOIN](./4_Codigo/4.3_aprender_SQL/3_Consultas_SQ.md)                                                                                      |
+| [3. SQL LEFT JOIN](./4_Codigo/4.3_aprender_SQL/3_Consultas_SQL.md)                                                                                      |
 | [4. SQL ALL](./4_Codigo/4.3_aprender_SQL/4_Consultas_SQL.md)                                                                                           |
 | [5. SQL AVG](./4_Codigo/4.3_aprender_SQL/5_Consultas_SQL.md)                                                                                           |
 | [6. SQL ADD COLUMN](./4_Codigo/4.3_aprender_SQL/6_Consultas_SQL.md)                                                                                    |
