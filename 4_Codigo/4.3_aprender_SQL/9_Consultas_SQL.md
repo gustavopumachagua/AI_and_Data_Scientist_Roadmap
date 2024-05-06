@@ -553,7 +553,7 @@ Una vez que has asignado un valor a una variable, puedes utilizarla en consultas
 DECLARE @CustomerID VARCHAR(10);
 SET @CustomerID = 'ALFKI';
 
-SELECT OrderID, OrderDate, TotalAmount
+SELECT OrderID, OrderDate
 FROM Orders
 WHERE CustomerID = @CustomerID;
 ```
