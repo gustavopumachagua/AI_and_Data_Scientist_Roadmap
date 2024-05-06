@@ -65,7 +65,7 @@ Una vez que has creado una tabla temporal, puedes utilizarla en consultas SQL co
 ```
 INSERT INTO #TempOrderDetails (OrderID, ProductID, Quantity, UnitPrice)
 SELECT OrderID, ProductID, Quantity, UnitPrice
-FROM OrderDetails
+FROM [Order Details]
 WHERE OrderID IN (SELECT OrderID FROM Orders WHERE CustomerID = 'ALFKI');
 ```
 
