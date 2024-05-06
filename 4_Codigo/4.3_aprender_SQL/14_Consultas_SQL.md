@@ -287,7 +287,7 @@ Para comprender mejor cómo se implementan y utilizan las vistas en SQL Server, 
 
 ```
 USE Northwind;
-
+GO
 -- Crear una vista que muestra información de clientes y pedidos
 CREATE VIEW VistaClientesPedidos
 AS
