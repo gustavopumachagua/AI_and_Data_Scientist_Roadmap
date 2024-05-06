@@ -536,6 +536,6 @@ En resumen, el comando `UPDATE` se utiliza para modificar los valores de uno o v
 
 ---
 
-| **Inicio**            | \*_atrás 6_                | **Siguiente 8**          |
+| **Inicio**            | **atrás 6**                | **Siguiente 8**          |
 | --------------------- | -------------------------- | ------------------------ |
 | [🏠](../../README.md) | [⏪](./6_Consultas_SQL.md) | [⏩](8_Consultas_SQL.md) |
