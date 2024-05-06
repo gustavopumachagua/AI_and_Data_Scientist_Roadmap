@@ -12,7 +12,7 @@
 | [132. Definición y uso de Tabla Temporal en Memoria](#132-definición-y-uso-de-tabla-temporal-en-memoria) |
 | [133. Definición y uso de Tabla Temporal Física](#133-definición-y-uso-de-tabla-temporal-física)         |
 | [134. Introducción Tablas Temporales](#134-introducción-tablas-temporales)                               |
-| [135. ¿Qué es una Vista? Uso e implementación](#135-¿qué-es-una-vista-uso-e-implementación)              |
+| [135. ¿Qué es una Vista? Uso e implementación](#135-¿qué-es-una-vista?-uso-e-implementación)              |
 | [136. Creando una vista desde el entorno gráfico](#136-creando-una-vista-desde-el-entorno-gráfico)       |
 | [137. Conclusión las vistas en SQL](#137-conclusión-las-vistas-en-sql)                                   |
 | [138. Introducción Trigger](#138-introducción-trigger)                                                   |
