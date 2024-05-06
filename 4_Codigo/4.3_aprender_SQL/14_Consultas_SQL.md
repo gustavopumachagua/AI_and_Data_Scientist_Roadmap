@@ -411,14 +411,15 @@ ON Orders
 AFTER INSERT
 AS
 BEGIN
-    INSERT INTO OrderDetails (OrderID, ProductID, Quantity)
-    SELECT i.OrderID, p.ProductID, 1
-    FROM inserted i
-    INNER JOIN Products p ON i.ProductID = p.ProductID;
+    -- Ejemplo: insertar detalles con un ProductID fijo o obtenido de otra manera
+    -- Aquí se inserta un ProductID fijo (ej. 1) y cantidad fija (ej. 1) para demostración
+    INSERT INTO [Order Details] (OrderID, ProductID, Quantity)
+    SELECT i.OrderID, 1, 1 -- Ajusta el 1 por la lógica adecuada para obtener el ProductID
+    FROM inserted i;
 END;
 ```
 
-En este ejemplo, el `trigger` se activa después de la inserción de una nueva fila en la tabla `Orders`. El código del `trigger` realiza una inserción en la tabla `OrderDetails` utilizando los datos de la fila recién insertada en la tabla `Orders` y realiza una selección de la tabla `Products` para obtener el `ProductID` correspondiente.
+En este ejemplo, el `trigger` se activa después de la inserción de una nueva fila en la tabla `Orders`. El código del `trigger` realiza una inserción en la tabla `[Order Details]` utilizando los datos de la fila recién insertada en la tabla `Orders` y realiza una selección de la tabla `Products` para obtener el `ProductID` correspondiente.
 
 3. **Tipos de Triggers:**
 
