@@ -103,7 +103,7 @@ Para crear una tabla temporal en memoria, debes seguir los siguientes pasos:
 
 2. Ejemplo de tabla temporal en memoria:
 
-Supongamos que queremos almacenar temporalmente los resultados intermedios de una consulta que involucra la tabla "`OrderDetails`". Utilizaremos la base de datos Northwind, donde tenemos la tabla "`OrderDetails`".
+Supongamos que queremos almacenar temporalmente los resultados intermedios de una consulta que involucra la tabla "`[Order Details]`". Utilizaremos la base de datos Northwind, donde tenemos la tabla "`[Order Details]`".
 
 Ejemplo de tabla temporal en memoria:
 
@@ -121,7 +121,7 @@ CREATE TABLE #TempOrderDetails
 WITH (MEMORY_OPTIMIZED = ON);
 ```
 
-En este ejemplo, creamos una tabla temporal en memoria llamada "`#TempOrderDetails`" con las mismas columnas que la tabla "`OrderDetails`". El prefijo "`#`" indica que es una tabla local. La cláusula "`WITH (MEMORY_OPTIMIZED = ON)`" indica que la tabla se almacenará en memoria.
+En este ejemplo, creamos una tabla temporal en memoria llamada "`#TempOrderDetails`" con las mismas columnas que la tabla "`[Order Details]`". El prefijo "`#`" indica que es una tabla local. La cláusula "`WITH (MEMORY_OPTIMIZED = ON)`" indica que la tabla se almacenará en memoria.
 
 3. Uso de tablas temporales en memoria:
 
@@ -130,11 +130,11 @@ Una vez que has creado una tabla temporal en memoria, puedes utilizarla en consu
 ```
 INSERT INTO #TempOrderDetails (OrderID, ProductID, Quantity, UnitPrice)
 SELECT OrderID, ProductID, Quantity, UnitPrice
-FROM OrderDetails
+FROM [Order Details]
 WHERE OrderID IN (SELECT OrderID FROM Orders WHERE CustomerID = 'ALFKI');
 ```
 
-Esta consulta inserta datos de la tabla "`OrderDetails`" en la tabla temporal en memoria "`#TempOrderDetails`" solo para los pedidos realizados por el cliente con el ID '`ALFKI`'.
+Esta consulta inserta datos de la tabla "`[Order Details]`" en la tabla temporal en memoria "`#TempOrderDetails`" solo para los pedidos realizados por el cliente con el ID '`ALFKI`'.
 
 Luego, puedes realizar otras operaciones o consultas utilizando la tabla temporal en memoria como parte de la lógica de tu consulta.
 
@@ -167,7 +167,7 @@ Para crear una tabla temporal física, debes seguir los siguientes pasos:
 
 2. Ejemplo de tabla temporal física:
 
-Supongamos que queremos almacenar temporalmente los resultados intermedios de una consulta que involucra la tabla "`OrderDetails`". Utilizaremos la base de datos Northwind, donde tenemos la tabla "`OrderDetails`".
+Supongamos que queremos almacenar temporalmente los resultados intermedios de una consulta que involucra la tabla "`[Order Details]`". Utilizaremos la base de datos Northwind, donde tenemos la tabla "`[Order Details]`".
 
 Ejemplo de tabla temporal física:
 
@@ -184,7 +184,7 @@ CREATE TABLE #TempOrderDetails
 );
 ```
 
-En este ejemplo, creamos una tabla temporal física llamada "`#TempOrderDetails`" en la base de datos `TempDB` con las mismas columnas que la tabla "`OrderDetails`". El prefijo "`#`" indica que es una tabla temporal.
+En este ejemplo, creamos una tabla temporal física llamada "`#TempOrderDetails`" en la base de datos `TempDB` con las mismas columnas que la tabla "`[Order Details]`". El prefijo "`#`" indica que es una tabla temporal.
 
 3. Uso de tablas temporales físicas:
 
@@ -193,11 +193,11 @@ Una vez que has creado una tabla temporal física, puedes utilizarla en consulta
 ```
 INSERT INTO #TempOrderDetails (OrderID, ProductID, Quantity, UnitPrice)
 SELECT OrderID, ProductID, Quantity, UnitPrice
-FROM Northwind.dbo.OrderDetails
+FROM Northwind.dbo.[Order Details]
 WHERE OrderID IN (SELECT OrderID FROM Northwind.dbo.Orders WHERE CustomerID = 'ALFKI');
 ```
 
-Esta consulta inserta datos de la tabla "`OrderDetails`" en la tabla temporal física "`#TempOrderDetails`" solo para los pedidos realizados por el cliente con el ID '`ALFKI`'.
+Esta consulta inserta datos de la tabla "`[Order Details]`" en la tabla temporal física "`#TempOrderDetails`" solo para los pedidos realizados por el cliente con el ID '`ALFKI`'.
 
 Luego, puedes realizar otras operaciones o consultas utilizando la tabla temporal física como parte de la lógica de tu consulta.
 
