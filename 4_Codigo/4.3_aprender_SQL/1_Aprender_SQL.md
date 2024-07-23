@@ -1082,7 +1082,7 @@ En esta sintaxis:
 
 - Los `ROW` y `ROWS`, `FIRST` y `NEXT` son sinónimos. Por lo tanto, puedes usarlos indistintamente.
 
-- Es `offset_row` sun número entero que debe ser cero o positivo. En caso de que `offset_rows` sea mayor que el número de filas en el conjunto de resultados, no se devolverá ninguna fila.
+- Es `offset_rowS` un número entero que debe ser cero o positivo. En caso de que `offset_rows` sea mayor que el número de filas en el conjunto de resultados, no se devolverá ninguna fila.
 
 - También es `fetch_rows` un número entero que determina el número de filas que se devolverán. El valor de `fetch_rows` es igual o mayor que uno.
 
